@@ -270,12 +270,12 @@ font-size: 80px;
         justify-content: center;
     }
     .imagen-portada img{
-        width: 300px;
+        width: 200px;
     }
     .text-portada-nosotros {
         text-align: center;
         position: relative;
-        top: 42px;
+        top: 40px;
     }
     .text-portada-nosotros h1{
        font-size: 30px;

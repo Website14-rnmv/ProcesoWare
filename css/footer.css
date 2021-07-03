@@ -1,0 +1,330 @@
+/*------------------------------------------------FOOTER---------------------------------------------------------*/
+:root{
+    --var-morado: #7219d8;
+    --var-azul: #2172FF;
+    --var-amarillo: #FFD640;
+    --var-amarilloOscuro: #e4c143;
+    --var-verde: #00B945;
+    --var-negroClaro: rgb(15, 15, 15);
+    
+}
+footer{
+    width: 100%;
+    padding:5% 10% 2% 10%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: var(--var-azul);
+}
+.wid-foot{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.5% 0;
+    
+}
+.wid{
+    width: 100%;
+    
+    
+}
+.widgets-center{
+   position: relative;
+   padding:  0 50px;
+}
+.lista-1-foot{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+
+.wid .img-foot{
+    width: 150px;
+}
+
+.wid .text-foot{
+    color: white;
+    font-weight: 400;
+    text-align: justify;
+}
+.wid h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+.wid .lista-1-foot .anclas-li-foot{
+    margin: 5px 0;
+    padding:5px 0;
+}
+
+.wid .lista-1-foot li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+.info-foot{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding: 5px 0;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+
+}
+.info-foot i{
+    font-size: 25px;
+    color: var(--var-amarillo);
+    margin: 0 10px 0 0 ;
+}
+
+.lista-1-foot .decargar-foot{
+    width: 100%;
+    margin: 20px 0;
+    border: 2px solid white;
+    padding:15px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.redes-sociales{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-sociales a i{
+    font-size: 25px;
+    margin: 0px;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.terminos{
+    display: flex;
+    align-items: center;
+
+}
+.pie-copy{
+    width: 100%;
+    padding: 20px 0 0 0;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+}
+.derechos{
+    font-size: 13px;
+}
+
+/*------------------------------------------------FOOTER---------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 1023px){
+    footer{
+        width: 100%;
+        padding:5% ;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    .wid-foot{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 2%;
+        
+    }
+    .wid{
+        width: 100%;
+        
+        
+    }
+    .widgets-center{
+       position: relative;
+       padding: 15px 0;
+    }
+    .lista-1-foot{
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+    }
+    
+  
+    
+   
+    .info-foot i{
+        font-size: 25px;
+        color: var(--var-amarillo);
+        margin: 0 10px 0 0 ;
+    }
+    
+    .lista-1-foot .decargar-foot{
+        width: 100%;
+        margin: 20px 0;
+        background-color: var(--var-amarillo);
+        padding:15px 20px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+    
+    .redes-sociales{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 50px;
+    }
+    
+    .redes-sociales a i{
+        font-size: 25px;
+        margin: 0px;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .terminos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .pie-copy{
+        width: 100%;
+        padding: 20px 0 0 0;
+        border-top: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+    
+    }
+    .derechos{
+        font-size: 13px;
+        position: relative;
+        left: -15px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    footer{
+        width: 100%;
+        padding:5% ;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    .wid-foot{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 2%;
+        
+    }
+    .wid{
+        width: 100%;
+        
+        
+    }
+    .widgets-center{
+       position: relative;
+       padding: 15px 0;
+    }
+    .lista-1-foot{
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+    }
+    
+    .wid .img-foot{
+        width: 150px;
+    }
+    
+    .wid .text-foot{
+        color: white;
+        text-align: justify;
+    }
+    .wid h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .wid .lista-1-foot .anclas-li-foot{
+        margin: 5px 0;
+        padding:5px 0;
+    }
+    
+    .wid .lista-1-foot li a{
+        color: white;
+        text-decoration: none;
+    }
+    .info-foot{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+        padding: 5px 0;
+        color: white;
+    
+    }
+    .info-foot i{
+        font-size: 25px;
+        color: var(--var-amarillo);
+        margin: 0 10px 0 0 ;
+    }
+    
+    .lista-1-foot .decargar-foot{
+        width: 100%;
+        margin: 20px 0;
+        background-color: var(--var-amarillo);
+        padding:15px 20px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+    
+    .redes-sociales{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .redes-sociales a i{
+        font-size: 25px;
+        margin: 0px;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .terminos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .pie-copy{
+        width: 100%;
+        padding: 20px 0 0 0;
+        border-top: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+    
+    }
+    .derechos{
+        font-size: 13px;
+        position: relative;
+    }
+}

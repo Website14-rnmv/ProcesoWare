@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --var-morado: #7219d8;
+    --var-azul: #2172FF;
+    --var-amarillo: #FFD640;
+    --var-amarilloOscuro: #e4c143;
+    --var-verde: #00B945;
+    --var-negroClaro: rgb(15, 15, 15);
+    
+}
+
+.portada-soluciones{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--var-azul);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 10% 0% 10%;
+}
+.gif-ware{
+    width: 100%;
+}
+.paloma{
+    position: relative;
+    width: 100%;
+    animation-name: paloma;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
+
+@keyframes paloma {
+    0% { top: 50px;}
+    50% { top: -60px; }
+    100% { top: -65px;  }
+  }
+
+.title-portada h1{
+    font-size: 80px;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+.title-portada h3{
+    color: var(--var-amarillo);
+    
+    font-weight: bold;
+}
+.title-portada p{
+    color: white;
+}
+.botones-solucion{
+    display: inline-block;
+    margin-top: 50px;
+}
+.btn-solu-1 {
+  padding:15px 30px;
+  color: white;
+  background-color: var(--var-amarillo);
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid var(--var-amarillo);
+
+}
+.btn-solu-2 {
+    padding:15px 30px;
+    margin: 10px;
+    color: white;
+    border: 2px solid var(--var-amarillo);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--var-amarillo);
+    text-decoration: none;
+    border-radius: 5px;
+  
+  }
+  .btn-solu-2:hover{
+      transition: .9s;
+      box-shadow: var(--var-amarillo) 0 -100px inset;
+      color: white;
+  }
+
+  .caracteristicas{
+      width: 100%;
+      padding:5% 10%;
+  }
+.tile-cara{
+    width: 100%;
+    text-align: center;
+
+}
+.tile-cara h2{
+    color: var(--var-negroClaro);
+    font-size: 40px;
+}
+.tile-cara p{
+    font-weight: 300;
+}
+.grid-cara{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 5% 0;
+}
+.wid-cara{
+    width: 100%;
+    padding:10% 5%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.wid-cara img{
+    width: 100%;
+    height: 100px;
+}
+.wid-cara i{
+    color: var(--var-azul);
+    font-size: 70px;
+}
+.wid-cara h2{
+    color: rgb(31, 29, 29);
+    margin: 10px 0;
+}
+.wid-cara p{
+    color :rgba(83, 83, 83, 0.8);
+    font-weight: 400;
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .portada-soluciones{
+        width: 100%;
+        height: 70vh;
+        background-color: var(--var-azul);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5% ;
+        position: relative;
+    }
+    .gif-ware{
+        width:30%;
+        position: absolute;
+        order: -1;
+        bottom: 10px;
+        right: 20px;
+
+    }
+    .paloma{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        animation-name: paloma;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+    }
+    
+    
+    @keyframes paloma {
+        0% { top: 20px;}
+        50% { top: -30px; }
+        100% { top: -25px;  }
+      }
+    .title-portada{
+        width: 100%;
+    }
+    .title-portada h1{
+        font-size: 80px;
+        font-family: 'Permanent Marker', cursive;
+        color: white;
+    }
+    .title-portada h3{
+        color: var(--var-amarillo);
+        
+        font-weight: bold;
+    }
+    .title-portada p{
+        color: white;
+    }
+    .botones-solucion{
+        display: inline-block;
+        margin-top: 50px;
+    }
+    .btn-solu-1 {
+      padding:15px 30px;
+      color: white;
+      background-color: var(--var-amarillo);
+      font-weight: bold;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      border: 2px solid var(--var-amarillo);
+    
+    }
+    .btn-solu-2 {
+        padding:15px 30px;
+        margin: 10px;
+        color: white;
+        border: 2px solid var(--var-amarillo);
+        font-weight: 500;
+        font-size: 18px;
+        color: var(--var-amarillo);
+        text-decoration: none;
+        border-radius: 5px;
+      
+      }
+      .btn-solu-2:hover{
+          transition: .9s;
+          box-shadow: var(--var-amarillo) 0 -100px inset;
+          color: white;
+      }
+    
+      .caracteristicas{
+          width: 100%;
+          padding:5% ;
+      }
+    .tile-cara{
+        width: 100%;
+        text-align: center;
+    
+    }
+    .tile-cara h2{
+        color: var(--var-negroClaro);
+        font-size: 40px;
+    }
+    .tile-cara p{
+        font-weight: 300;
+    }
+    .grid-cara{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        padding: 5% 0;
+    }
+    .wid-cara{
+        width: 100%;
+        padding:10% 5%;
+        border-radius: 10px;
+        text-align: center;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    }
+    .wid-cara img{
+        width: 100%;
+        height: 100px;
+    }
+    .wid-cara i{
+        color: var(--var-azul);
+        font-size: 70px;
+    }
+    .wid-cara h2{
+        color: rgb(31, 29, 29);
+        margin: 10px 0;
+    }
+    .wid-cara p{
+        color :rgba(83, 83, 83, 0.8);
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    .portada-soluciones{
+        width: 100%;
+        height: 75vh;
+        background-color: var(--var-azul);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5% 5% 0 5% ;
+        position: relative;
+    }
+    .gif-ware{
+        width:40%;
+        position: absolute;
+        order: -1;
+        top: 75px;
+        right: 20px;
+
+    }
+    .paloma{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        animation-name: paloma;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+    }
+    
+    
+    @keyframes paloma {
+        0% { top: 10px;}
+        50% { top: -15px; }
+        100% { top: -15px;  }
+      }
+    .title-portada{
+        width: 100%;
+        position: relative;
+        top: 20px;
+    }
+    .title-portada h1{
+        font-size: 50px;
+        font-family: 'Permanent Marker', cursive;
+        color: white;
+    }
+    .title-portada h3{
+        color: var(--var-amarillo);
+        
+        font-weight: bold;
+    }
+    .title-portada p{
+        color: white;
+        font-size: 15px;
+    }
+    .botones-solucion{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        text-align: center;
+
+    }
+    .btn-solu-1 {
+      padding:15px 30px;
+      color: white;
+      background-color: var(--var-amarillo);
+      font-weight: bold;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      border: 2px solid var(--var-amarillo);
+    
+    }
+    .btn-solu-2 {
+        padding:15px 30px;
+        margin: 10px 0;
+        color: white;
+        border: 2px solid var(--var-amarillo);
+        font-weight: 500;
+        font-size: 18px;
+        color: var(--var-amarillo);
+        text-decoration: none;
+        border-radius: 5px;
+      
+      }
+      .btn-solu-2:hover{
+          transition: .9s;
+          box-shadow: var(--var-amarillo) 0 -100px inset;
+          color: white;
+      }
+    
+      .caracteristicas{
+          width: 100%;
+          padding:0% ;
+      }
+    .tile-cara{
+        width: 100%;
+        text-align: center;
+        background-color: rgb(40, 86, 185);
+        padding: 5%;
+        color: white;
+    
+    }
+    .tile-cara h2{
+        color: white;
+        font-size: 20px;
+    }
+    .tile-cara p{
+        font-weight: 300;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .grid-cara{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        padding: 5% 0;
+    }
+    .wid-cara{
+        width: 100%;
+        padding:10% 5%;
+        border-radius: 10px;
+        text-align: center;
+        background-color: white;
+        box-shadow: none;
+    }
+    .wid-cara img{
+        width: 100%;
+        height: 100px;
+    }
+    .wid-cara i{
+        color: var(--var-azul);
+        font-size: 70px;
+    }
+    .wid-cara h2{
+        color: rgb(31, 29, 29);
+        margin: 10px 0;
+    }
+    .wid-cara p{
+        color :rgba(83, 83, 83, 0.8);
+        font-weight: 400;
+    }
+}

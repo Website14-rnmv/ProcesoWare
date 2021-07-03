@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --var-morado: #7219d8;
+    --var-azul: #2172FF;
+    --var-amarillo: #FFD640;
+    --var-amarilloOscuro: #e4c143;
+    --var-verde: #00B945;
+    --var-negroClaro: rgb(15, 15, 15);
+    
+}
+
+header{
+    height: 69px;
+}
+.preguntas{
+    width: 100%;
+    margin-top: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    padding: 0 5%;
+    
+}
+.img-pregunta{
+    width: 40%;
+    height: 100%;
+   position: sticky;
+   left: 0;
+   bottom: 0;
+}
+.img-pregunta img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.cajones-preguntas{
+    position: relative;
+    right: 0;
+    width: 60%;
+    padding: 2%;
+    top: -200px;
+}
+.cajoncitos{
+    position: relative;
+
+}
+.title-preguntas{
+    width: 100%;
+    text-align: center;
+}
+.title-preguntas h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+.title-preguntas{
+    font-weight: 300;
+}
+
+.parrafos-preguntas{
+    color: rgb(41, 41, 41);
+    font-weight: 300;
+}
+.widgets-center h1{
+    position: relative;
+    margin-left: 30px;
+    
+
+}
+
+/*ACORDION*/
+.accordion {
+    background-color: rgba(245, 245, 245, 0.596);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.4s;
+    margin-bottom: 2px;
+    
+  }
+ 
+  
+  .active-2, .accordion:hover {
+    background-color: var(--var-azul);
+    color: white;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active-2:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .panel p{
+      font-size: 16px;
+      font-weight: 300;
+      color: rgb(44, 44, 44);
+  }
+/*ACORDION*/
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+  
+    .preguntas{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        padding: 10% 0 0  0;
+        
+    }
+    .img-pregunta{
+        width:50%;
+        height: 100%;
+       position: relative;
+       left: 0;
+       bottom: 0;
+    }
+    .img-pregunta img{
+        width: 100%;
+        position: relative;
+        bottom: 0;
+    }
+    
+    .cajones-preguntas{
+        position: relative;
+        right: 0;
+        width: 100%;
+        padding: 5%;
+    }
+    .title-preguntas{
+        width: 100%;
+        text-align: center;
+    }
+    .title-preguntas h1{
+        font-weight: bold;
+        font-size: 50px;
+    }
+    .title-preguntas{
+        font-weight: 300;
+    }
+    
+    .parrafos-preguntas{
+        color: rgb(41, 41, 41);
+        font-weight: 300;
+    }
+    .widgets-center h1{
+        position: relative;
+        margin-left: 30px;
+        
+    
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    .preguntas{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        padding: 30% 0 0  0;
+        
+    }
+    .img-pregunta{
+        width:50%;
+        height: 100%;
+       position: relative;
+     
+    }
+    .img-pregunta img{
+        width: 100%;
+        position: relative;
+
+    }
+    
+    .cajones-preguntas{
+        position: relative;
+        right: 0;
+        width: 100%;
+        padding: 5%;
+    }
+    .title-preguntas{
+        width: 100%;
+        text-align: center;
+    }
+    .title-preguntas h1{
+        font-weight: bold;
+        font-size: 50px;
+    }
+    .title-preguntas{
+        font-weight: 300;
+    }
+    
+    .parrafos-preguntas{
+        color: rgb(0, 0, 0);
+        font-weight: 300;
+    }
+   
+}
